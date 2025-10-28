@@ -3,6 +3,7 @@ import LoadingSpinner from "./LoadingSpinner";
 import { useApi } from "./useApi";
 import PokemonAbility from "./PokemonAbility";
 import ErrorMessage from "./ErrorMessage";
+import React from "react";
 
 const formatName = (nameWithDash) => nameWithDash.replace("-", " ");
 
