@@ -1,0 +1,34 @@
+name: Hello World!
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    hello_world_job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Say Hello
+              run: |
+                  echo "Hello, World!"
+
+            - name: List files
+              run: |
+                  ls
+    display_date_job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Display Date
+              run: |
+                  date
+
+    show_my_name:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Show My Name
+              run: |
+                  echo "My name is Ezeugo Felistus Obieze"
