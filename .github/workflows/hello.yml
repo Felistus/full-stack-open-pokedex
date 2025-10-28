@@ -14,21 +14,18 @@ jobs:
               run: |
                   echo "Hello, World!"
 
-            - name: List files
-              run: |
-                  ls
-    display_date_job:
-        runs-on: ubuntu-latest
-
-        steps:
-            - name: Display Date
+            - name: Now it is
               run: |
                   date
 
-    show_my_name:
-        runs-on: ubuntu-latest
+            - name: Directory content
+              run: |
+                  ls -l
 
-        steps:
+            - name: Git Version
+              run: |
+                  git --version
+
             - name: Show My Name
               run: |
                   echo "My name is Ezeugo Felistus Obieze"
